@@ -1,0 +1,74 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: sans-serif;
+}
+
+.chat {
+  width: 400px;
+  height: 100%;
+  background-color: #dde9ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.chat__body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 20px;
+}
+
+.chat__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px 20px;
+}
+
+.chat__input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 30px;
+  padding: 5px 10px;
+}
+
+.chat__btn {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.message {
+  width: 80%;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: auto;
+}
+
+.message--other {
+  margin-right: auto;
+  margin-left: 0;
+  background-color: #a9ffb8;
+}
+/*# sourceMappingURL=main.css.map */
