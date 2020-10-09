@@ -20,6 +20,7 @@ body {
 .chat {
   width: 400px;
   height: 100%;
+  background-image: url("/lib/cat1.png");
   background-color: #dde9ff;
   display: -webkit-box;
   display: -ms-flexbox;
