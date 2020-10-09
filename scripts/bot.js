@@ -12,6 +12,11 @@ class ChatBot {
 
   async answer (text) {
 
+    if(/dame un random/.test(text)) {
+      const r = Math.floor(Math.random() * 99999);
+      return `Tu random es: ${r}`;
+    }
+
     if(/^hola\s?.*/.test(text)){
       return 'El bot dice "Hola"';
     }
