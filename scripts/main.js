@@ -9,12 +9,18 @@ const bot = new ChatBot();
 const createMessage = (text, isOther = false) => {
   if(!text) return; // ignore if no text
 
+  let randomRed = Math.floor(Math.random() * 255);
+  let randomGreen = Math.floor(Math.random() * 255);
+  let randomBlue = Math.floor(Math.random() * 255);
   // create message element
   const newMessage = document.createElement('div');
   newMessage.classList.add('message');
   newMessage.innerText = text;
+  newMessage.style.backgroundColor = "rgb(" + randomRed + ", " + randomGreen +", " + randomBlue +")";
+
   if(isOther) {
     newMessage.classList.add('message--other');
+    newMessage.style.backgroundColor = "rgb(169, 255, 184)";
   }
 
   // add message to body
